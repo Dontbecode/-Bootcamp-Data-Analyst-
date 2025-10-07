@@ -89,3 +89,25 @@ uniform_samples = np.random.uniform(low=0, high=10, size=5)
 Gunakan bebas untuk pembelajaran pribadi.
 
 
+
+
+### Ringkasan Pembelajaran Hari Ini (2025-10-07)
+- **NumPy: Performa & Dasar Array**
+  - Simulasi data besar (10.000.000 gaji) dan perbandingan rata-rata: Python murni (~73 ms) vs `np.mean` (~6 ms) menunjukkan percepatan signifikan berkat vektorisasi.
+  - Pembuatan array 1D/2D/3D dengan `np.array`, kontrol `dtype` (mis. `np.int32`).
+  - Generator dan array khusus: `np.arange`, `np.zeros`, `np.ones`.
+  - Pengaturan dimensi: `reshape`, atribut `shape`, meratakan dengan `flatten()`.
+  - Indexing & slicing pada 1D/2D, termasuk indeks negatif dan rentang `[start:stop:step]`.
+  - Modifikasi elemen dan slice assignment (contoh `array[1:3] = [...]`).
+  - Operasi vektorisasi elemen-per-elemen: `+`, `-`, `*`, `/`.
+  - Atribut penting: `shape`, `size`.
+  - Statistik dasar: `mean`, `sum`, `min`, `max`, `median`, `std`, `var`, `percentile`.
+  - Distribusi probabilitas: Normal (`np.random.normal`) dan Uniform (`np.random.uniform`).
+
+- **Pandas: Pengenalan**
+  - Versi yang digunakan: 2.3.3.
+  - Struktur data utama: `Series` (1D berindeks) dan `DataFrame` (2D seperti tabel).
+  - Membuat `DataFrame` dari list/dict; penggunaan `display(...)` untuk tampilan terformat di Jupyter.
+  - Membaca data dari berbagai sumber: `read_csv`, `read_excel`, `read_json`, serta contoh `pd.read_excel('data.xlsx')`.
+
+Catatan: Materi hari ini fokus membangun intuisi performa NumPy dan dasar manipulasi struktur data di Pandas sebagai fondasi analisis data.
